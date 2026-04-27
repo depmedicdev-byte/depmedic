@@ -1,5 +1,7 @@
 # depmedic
 
+[![npm](https://img.shields.io/npm/v/depmedic.svg)](https://www.npmjs.com/package/depmedic) [![ci](https://github.com/depmedicdev-byte/depmedic/actions/workflows/test.yml/badge.svg)](https://github.com/depmedicdev-byte/depmedic/actions/workflows/test.yml) [![license](https://img.shields.io/npm/l/depmedic.svg)](./LICENSE)
+
 Surgical npm vulnerability triage. Reads `npm audit --json`, prints the smallest
 set of package bumps that close the reported vulnerabilities, ranks them by
 severity and reachability, and exits with a CI-friendly code.
