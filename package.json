@@ -1,0 +1,47 @@
+{
+  "name": "depmedic",
+  "version": "0.1.0",
+  "description": "Surgical npm vulnerability triage. Minimum-bump fixes, prod/dev split, transitive depth, no breaking surprises.",
+  "keywords": [
+    "npm",
+    "audit",
+    "vulnerability",
+    "security",
+    "dependencies",
+    "cli",
+    "minimum-bump",
+    "patch",
+    "supply-chain",
+    "advisory"
+  ],
+  "bin": {
+    "depmedic": "bin/depmedic.js"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "picocolors": "^1.0.0",
+    "semver": "^7.6.0"
+  },
+  "license": "MIT",
+  "author": "depmedic <depmedic.dev@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/depmedicdev-byte/depmedic.git"
+  },
+  "homepage": "https://github.com/depmedicdev-byte/depmedic#readme",
+  "bugs": {
+    "url": "https://github.com/depmedicdev-byte/depmedic/issues"
+  }
+}

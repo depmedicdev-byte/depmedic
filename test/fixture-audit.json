@@ -1,0 +1,61 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "lodash": {
+      "name": "lodash",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1065,
+          "name": "lodash",
+          "dependency": "lodash",
+          "title": "Prototype Pollution in lodash",
+          "url": "https://github.com/advisories/GHSA-jf85-cpcp-j695",
+          "severity": "high",
+          "cwe": ["CWE-1321"],
+          "cvss": { "score": 7.4, "vectorString": "" },
+          "range": "<4.17.21"
+        }
+      ],
+      "effects": [],
+      "range": "<4.17.21",
+      "nodes": ["node_modules/lodash"],
+      "fixAvailable": { "name": "lodash", "version": "4.17.21", "isSemVerMajor": false }
+    },
+    "minimist": {
+      "name": "minimist",
+      "severity": "critical",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1179,
+          "name": "minimist",
+          "dependency": "minimist",
+          "title": "Prototype Pollution in minimist",
+          "url": "https://github.com/advisories/GHSA-xvch-5gv4-984h",
+          "severity": "critical",
+          "range": "<1.2.6"
+        }
+      ],
+      "effects": ["mkdirp"],
+      "range": "<1.2.6",
+      "nodes": ["node_modules/minimist"],
+      "fixAvailable": { "name": "mkdirp", "version": "3.0.1", "isSemVerMajor": true }
+    },
+    "mkdirp": {
+      "name": "mkdirp",
+      "severity": "critical",
+      "isDirect": true,
+      "via": ["minimist"],
+      "effects": [],
+      "range": "0.4.0 - 0.5.5",
+      "nodes": ["node_modules/mkdirp"],
+      "fixAvailable": { "name": "mkdirp", "version": "3.0.1", "isSemVerMajor": true }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": { "info": 0, "low": 0, "moderate": 0, "high": 1, "critical": 2, "total": 3 },
+    "dependencies": { "prod": 5, "dev": 2, "optional": 0, "peer": 0, "peerOptional": 0, "total": 7 }
+  }
+}
