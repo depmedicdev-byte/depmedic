@@ -1,6 +1,6 @@
 {
   "name": "depmedic",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Surgical npm vulnerability triage. Minimum-bump fixes, prod/dev split, transitive depth, no breaking surprises.",
   "keywords": [
     "npm",
