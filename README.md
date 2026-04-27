@@ -8,6 +8,8 @@ severity and reachability, and exits with a CI-friendly code.
 enterprise contract. depmedic does one thing: tell me the minimum bump that
 fixes the real issues, in one screenful, with no breaking surprises.
 
+![demo](docs/demo.svg)
+
 ## Install
 
 ```bash
