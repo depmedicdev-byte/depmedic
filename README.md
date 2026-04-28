@@ -1,5 +1,8 @@
 # depmedic
 
+
+[![Sponsor](https://img.shields.io/badge/sponsor-depmedic-ea4aaa?logo=githubsponsors)](https://depmedicdev-byte.github.io/sponsor.html)
+
 [![npm](https://img.shields.io/npm/v/depmedic.svg)](https://www.npmjs.com/package/depmedic) [![ci](https://github.com/depmedicdev-byte/depmedic/actions/workflows/test.yml/badge.svg)](https://github.com/depmedicdev-byte/depmedic/actions/workflows/test.yml) [![license](https://img.shields.io/npm/l/depmedic.svg)](./LICENSE)
 
 Surgical npm vulnerability triage. Reads `npm audit --json`, prints the smallest
